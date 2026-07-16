@@ -236,8 +236,10 @@ Not part of the roadmap, just things I keep going back to.
 
 I'm breaking down every step in this roadmap. If it's useful, follow along:
 
-- YouTube / TikTok / Instagram: add your handle here
-- X / Twitter: add your handle here
+- YouTube: [@khanhgn](https://youtube.com/@khanhgn)
+- TikTok: [@khanhcore](https://tiktok.com/@khanhcore)
+- Instagram: [@khanhcore](https://instagram.com/khanhcore)
+- X: [@khanhcore](https://x.com/khanhcore)
 
 Star this repo so you can find it later, and share it with someone who's just starting out.
 
