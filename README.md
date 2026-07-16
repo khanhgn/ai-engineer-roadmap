@@ -1,4 +1,4 @@
-# The AI Engineer Roadmap 🧭
+# The AI Engineer Roadmap
 
 Ten steps from your first line of Python to shipping AI products people actually use.
 
@@ -10,7 +10,7 @@ Made by [Khanh](#follow). Star it if it's useful ⭐ and pass it on to someone s
 
 Work top to bottom. The order matters, each step assumes the one before it. For each step, read the short intro, learn the bullets, then work through the resources.
 
-Don't try to master everything, you'll just burn out. Get functional, build something, come back deeper later. The only step that really counts is the last one: build and ship. 🚀
+Don't try to master everything, you'll just burn out. Get functional, build something, come back deeper later. The only step that really counts is the last one: build and ship.
 
 ## The roadmap
 
@@ -29,7 +29,7 @@ Don't try to master everything, you'll just burn out. Get functional, build some
 
 ## 1. Python and Git
 
-🐍 Everything else sits on top of these two. Python is the language of AI tooling, Git is how you save and share code without losing your mind. Boring? Maybe. Skippable? No.
+Everything else sits on top of these two. Python is the language of AI tooling, Git is how you save and share code without losing your mind. Boring? Maybe. Skippable? No.
 
 Learn:
 - Python syntax, data structures, functions, the standard library
@@ -47,7 +47,7 @@ Resources:
 
 ## 2. Model inference
 
-⚡ The core skill. Send a prompt to a model, get a response back through an API. Once you can do this reliably and you understand tokens and streaming, the rest is honestly just composition.
+The core skill. Send a prompt to a model, get a response back through an API. Once you can do this reliably and you understand tokens and streaming, the rest is honestly just composition.
 
 Learn:
 - Calling model APIs (Anthropic Claude, OpenAI) from code
@@ -66,7 +66,7 @@ Resources:
 
 ## 3. Agents and tool calling
 
-🤖 A model that can call your functions stops being a chatbot and starts being a system that does things: searches, runs code, hits APIs. Tool calling plus a loop is the whole foundation of every agent. That's it. That's the trick.
+A model that can call your functions stops being a chatbot and starts being a system that does things: searches, runs code, hits APIs. Tool calling plus a loop is the whole foundation of every agent. That's it. That's the trick.
 
 Learn:
 - Tool calling: schemas, the tool_use to tool_result round trip, tool_choice
@@ -86,7 +86,7 @@ Resources:
 
 ## 4. Structured output and prompting
 
-🎯 Real products need data, not prose. Structured output turns a model into a reliable API that returns valid JSON. And prompting is the highest-leverage skill on this whole list. The gap between a demo and a product is often just the prompt.
+Real products need data, not prose. Structured output turns a model into a reliable API that returns valid JSON. And prompting is the highest-leverage skill on this whole list. The gap between a demo and a product is often just the prompt.
 
 Learn:
 - Prompt engineering: clarity, examples, XML structure, separating instructions from data
@@ -105,7 +105,7 @@ Resources:
 
 ## 5. Embeddings
 
-🧬 Embeddings turn text into vectors so you can search by meaning instead of keywords. They're the engine behind semantic search, recommendations, and RAG, which is how you give a model knowledge it wasn't trained on. Feels like magic the first time it works.
+Embeddings turn text into vectors so you can search by meaning instead of keywords. They're the engine behind semantic search, recommendations, and RAG, which is how you give a model knowledge it wasn't trained on. Feels like magic the first time it works.
 
 Learn:
 - What embeddings are: mapping semantic similarity to spatial proximity
@@ -124,7 +124,7 @@ Resources:
 
 ## 6. Deployments
 
-🚀 Code on your laptop helps no one. Deployment is how your app becomes something people can actually reach: wrapped in an API, containerised, running in the cloud.
+Code on your laptop helps no one. Deployment is how your app becomes something people can actually reach: wrapped in an API, containerised, running in the cloud.
 
 Learn:
 - Serving an app as an API (FastAPI)
@@ -143,7 +143,7 @@ Resources:
 
 ## 7. Guardrails
 
-🛡️ Once real users hit your app, things go wrong: prompt injection, unsafe output, leaked PII, hallucinations. Guardrails are the validation layer that keeps an AI product safe and trustworthy in production. Users will do things you never imagined. Plan for it.
+Once real users hit your app, things go wrong: prompt injection, unsafe output, leaked PII, hallucinations. Guardrails are the validation layer that keeps an AI product safe and trustworthy in production. Users will do things you never imagined. Plan for it.
 
 Learn:
 - Input and output validation
@@ -162,7 +162,7 @@ Resources:
 
 ## 8. Databases
 
-🗄️ AI apps still need to store things: user data, documents, and the vectors from step 5. Knowing which database to reach for, relational or vector or both, is what keeps your app fast and your data sane. And no, you don't always need a fancy vector DB.
+AI apps still need to store things: user data, documents, and the vectors from step 5. Knowing which database to reach for, relational or vector or both, is what keeps your app fast and your data sane. And no, you don't always need a fancy vector DB.
 
 Learn:
 - SQL fundamentals (still essential, most data is relational)
@@ -182,7 +182,7 @@ Resources:
 
 ## 9. Caching
 
-⚙️ LLM calls are slow and cost money. Caching cuts both: reuse repeated context and repeated answers instead of paying for them every single time. Often the biggest lever you've got on latency and cost, and the easiest to ignore.
+LLM calls are slow and cost money. Caching cuts both: reuse repeated context and repeated answers instead of paying for them every single time. Often the biggest lever you've got on latency and cost, and the easiest to ignore.
 
 Learn:
 - Prompt caching: reusing large static context across calls
@@ -201,7 +201,7 @@ Resources:
 
 ## 10. Context management
 
-🧠 The context window is finite and precious. As conversations and agent runs grow, you have to decide what stays, what gets summarised, and what gets dropped. Managing context well is what separates a toy from an agent that runs for hours without falling apart.
+The context window is finite and precious. As conversations and agent runs grow, you have to decide what stays, what gets summarised, and what gets dropped. Managing context well is what separates a toy from an agent that runs for hours without falling apart.
 
 Learn:
 - How the context window works and what counts toward it
@@ -217,11 +217,11 @@ Resources:
 - [MemGPT: Towards LLMs as Operating Systems](https://arxiv.org/abs/2310.08560) (paper). OS-style paging between in-context and external memory. Foundational for agent memory design.
 - [mem0](https://github.com/mem0ai/mem0) (repo). A popular universal memory layer for agents across sessions.
 
-## The last step: build and ship 🏁
+## The last step: build and ship
 
-The roadmap ends where the real learning starts. Pick one idea and build it end to end: inference, a prompt, a tool call, a vector search, a guardrail, deployed behind an API. Ship something people can actually use, even if it's a little rough. Then do it again. That loop is the job. 🔁
+The roadmap ends where the real learning starts. Pick one idea and build it end to end: inference, a prompt, a tool call, a vector search, a guardrail, deployed behind an API. Ship something people can actually use, even if it's a little rough. Then do it again. That loop is the job.
 
-## Other repos and tutorials I find helpful 📚
+## Other repos and tutorials I find helpful
 
 Not part of the roadmap, just things I keep going back to.
 
